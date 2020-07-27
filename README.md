@@ -1,3 +1,3 @@
 # AI - Pracs
 
-Something something
+1. BFS
