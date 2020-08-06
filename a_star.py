@@ -73,7 +73,8 @@ def a_star(node, destination):
         while True:
             ''' select minimum f_n node '''
             selected = cities.iloc[index]
-            if selected.Name in closed_list:
+            ''' in closed list, or not neighbours '''
+            if selected.Name in closed_list or neighbours[neighbours['Place B'] == selected.Name].empty:
                 index += 1
             else:
                 ''' add to closed list '''
